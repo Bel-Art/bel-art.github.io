@@ -1,0 +1,18 @@
+[
+    {
+        "path": "_index.md",
+        "title": "Introduction"
+    },
+    {
+        "path": "weekly_tips/_index.md",
+        "title": "Introduction"
+    },
+    {
+        "path": "weekly_tips/search-cmd.md",
+        "title": "Search in commands history"
+    },
+    {
+        "path": "bel-art.md",
+        "title": "Le club Bel Art"
+    }
+]

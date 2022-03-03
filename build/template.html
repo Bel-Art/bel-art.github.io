@@ -1,0 +1,87 @@
+{% autoescape off %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="generator" content="Hugo 0.92.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <title>{{ title }} | Bel Art</title>
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body dir="ltr">
+    <input type="checkbox" class="hidden toggle" id="menu-control" />
+    <input type="checkbox" class="hidden toggle" id="toc-control" />
+    <main class="container flex">
+        <aside class="book-menu">
+            <div class="book-menu-content">
+                <nav>
+                    <h2 class="book-brand">
+                        <a class="flex align-center" href="./"><span>Bel Art</span>
+                        </a>
+                    </h2>
+                    <ul>
+                        {{menu}}
+                        <li class="book-section-flat">
+                            <a href="./" class="">Le club Bel Art</a>
+                            <ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="checkbox" for="weekly" class="toggle" />
+                            <label for="weekly" class="flex justify-between">
+                                <a href="http://localhost/docs/weekly_tips/" class="">Weekly Tips</a>
+                            </label>
+                            <ul>
+                                <li>
+                                    <a href="http://localhost/docs/weekly_tips/search_cmd/" class="">Search in
+                                        commands
+                                        history</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    {{menu2}}
+                </nav>
+            </div>
+        </aside>
+        <div class="book-page">
+            <header class="book-header">
+                <div class="flex align-center justify-between">
+                    <label for="menu-control">
+                        <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+                    </label>
+                    <strong>Introduction</strong>
+                    <label for="toc-control">
+                        <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+                    </label>
+                </div>
+                <aside class="hidden clearfix">
+                    <nav id="TableOfContents"></nav>
+                </aside>
+            </header>
+            <article class="markdown">
+                {{file}}
+            </article>
+            <footer class="book-footer">
+                <div class="flex flex-wrap justify-between">
+                </div>
+                <script>(function () { function a(c) { const a = window.getSelection(), b = document.createRange(); b.selectNodeContents(c), a.removeAllRanges(), a.addRange(b) } document.querySelectorAll("pre code").forEach(b => { b.addEventListener("click", function (c) { a(b.parentElement), navigator.clipboard && navigator.clipboard.writeText(b.parentElement.textContent) }) }) })()</script>
+            </footer>
+            <div class="book-comments">
+            </div>
+            <label for="menu-control" class="hidden book-menu-overlay"></label>
+        </div>
+        <aside class="book-toc" style="border-left: 1px solid var(--gray-500);">
+        </aside>
+    </main>
+</body>
+
+</html>
+{% endautoescape %}
