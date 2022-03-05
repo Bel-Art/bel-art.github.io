@@ -4,6 +4,9 @@ serve:
 	go run main.go
 
 build:
-	go run build/build.go .
+	cd build; go run build.go
+
+clean:
+	rm -rf public
 
 .PHONY: build

@@ -1,18 +1,28 @@
 [
     {
-        "path": "_index.md",
-        "title": "Introduction"
-    },
-    {
-        "path": "weekly_tips/_index.md",
-        "title": "Introduction"
-    },
-    {
-        "path": "weekly_tips/search-cmd.md",
-        "title": "Search in commands history"
+        "path": "index.md",
+        "title": "Introduction",
+        "isDirectory": false,
+        "renderOnly": true
     },
     {
         "path": "bel-art.md",
-        "title": "Le club Bel Art"
+        "title": "Le club Bel Art",
+        "isDirectory": false
+    },
+    {
+        "path": "weekly_tips",
+        "title": "Weekly Tips",
+        "isDirectory": true,
+        "entries": [
+            {
+                "path": "weekly_tips/index.md",
+                "title": "Introduction"
+            },
+            {
+                "path": "weekly_tips/search-cmd.md",
+                "title": "Search in commands history"
+            }
+        ]
     }
 ]

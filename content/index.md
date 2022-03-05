@@ -51,8 +51,10 @@
     }
 </style>
 </div>
-<div style="text-align:center">
 
-# Bienvenue !
+# Bienvenue sur le site du club Bel Art !
 
-</div>
+> Made in GO !
+
+
+

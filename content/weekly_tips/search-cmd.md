@@ -1,1 +1,3 @@
-`CTRL` + `SHIF` + `R`
+# Search in commands history
+
+`CTRL` + `R`
