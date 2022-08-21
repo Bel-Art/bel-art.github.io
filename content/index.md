@@ -54,7 +54,6 @@
 
 # Bienvenue sur le site du club Bel Art !
 
-> Made in GO !
 
 
 

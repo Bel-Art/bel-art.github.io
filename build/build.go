@@ -52,7 +52,6 @@ func buildFiles(entries []Entry, template *pongo2.Template, menu string) {
 	for i, s := range entries {
 		if s.IsDirectory {
 			buildFiles(s.Entries, template, menu)
-			continue
 		}
 		fmt.Println(i, s.Path, " | ", s.Title)
 		markdownFile, err := os.ReadFile(filepath.Join(defaultPath, "content", s.Path))
@@ -86,7 +85,7 @@ func createMenu(entries []Entry, count int) string {
 			menuStr += fmt.Sprintf("<input type='checkbox' id='%s' class='toggle' />", s.Path)
 			menuStr += fmt.Sprintf("<label for='%s' class='flex justify-between'>", s.Path)
 			nameFile = strings.TrimSuffix(nameFile, ".html")
-			nameFile = nameFile + "/index.html"
+			nameFile = nameFile + ".html"
 			menuStr += fmt.Sprintf("<a href='%s'>%s</a>", nameFile, s.Title)
 			menuStr += "</label>"
 			menuStr += "<ul>"
