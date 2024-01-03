@@ -16,3 +16,7 @@ Bel-art has accomplished:
 -   Hosting a CSV for a subject and thus for students of a subject
 -   Assisting people in [INF103](https://inf103.telecom-paris.fr/inf103/)
 -   Helping people :)
+
+## Logos
+
+[Here](https://bel-art.github.io/telecom-logos/) is a website with plenty of logos : [https://bel-art.github.io/telecom-logos/](https://bel-art.github.io/telecom-logos/). You can preview them with hovering!
