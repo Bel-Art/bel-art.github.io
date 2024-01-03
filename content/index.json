@@ -11,6 +11,11 @@
         "isDirectory": false
     },
     {
+        "path": "telecom.md",
+        "title": "Bel Art @ Télécom Paris",
+        "isDirectory": false
+    },
+    {
         "path": "weekly_tips/index.md",
         "title": "Weekly Tips",
         "isDirectory": true,
