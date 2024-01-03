@@ -1,6 +1,6 @@
-# Bel-Art @ Telecom
+# Bel-Art @ Télécom Paris
 
-Bel-art has accomplished:
+## Accomplishment
 
 -   [WEB101](https://github.com/bel-art/WEB101)
 -   [https://github.com/bel-art](https://github.com/bel-art)
