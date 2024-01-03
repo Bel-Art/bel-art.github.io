@@ -80,12 +80,12 @@ func createMenu(entries []Entry, count int) string {
 		_, nameFile, _ := getFileName(s.Path)
 		nameFile = strings.TrimPrefix(nameFile, "../public/")
 		nameFile = "/" + nameFile
+		nameFile = strings.TrimSuffix(nameFile, ".html")
 		if s.IsDirectory {
 			data := createMenu(s.Entries, count+1)
 			menuStr += fmt.Sprintf("<input type='checkbox' id='%s' class='toggle' />", s.Path)
 			menuStr += fmt.Sprintf("<label for='%s' class='flex justify-between'>", s.Path)
-			nameFile = strings.TrimSuffix(nameFile, ".html")
-			// nameFile = nameFile + ".html"
+			nameFile = strings.TrimSuffix(nameFile, "index")
 			menuStr += fmt.Sprintf("<a href='%s'>%s</a>", nameFile, s.Title)
 			menuStr += "</label>"
 			menuStr += "<ul>"
