@@ -16,14 +16,8 @@
         "isDirectory": false
     },
     {
-        "path": "weekly_tips/index.md",
-        "title": "Weekly Tips",
-        "isDirectory": true,
-        "entries": [
-            {
-                "path": "weekly_tips/search-cmd.md",
-                "title": "Search in commands history"
-            }
-        ]
+        "path": "asmr.md",
+        "title": "ASMR",
+        "isDirectory": false
     }
 ]
